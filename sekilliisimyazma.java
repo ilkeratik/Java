@@ -1,15 +1,15 @@
 import java.util.Scanner;
 /*soru:ad girilmesi istenir,karakter sayısı 12 katı değilse olana kadar sonuna "*" eklenir ve kare şeklinde yazdırın.
 ör:ilkeratik
-i l k e
-r     *
-a     *
+i l k e 
+r     * 
+a     * 
 t i k * 
 quest: request name,if name lenght not 12's solid,add "*" charachter and write like square.
 example:ilkeratik
-i l k e
-r     *
-a     *
+i l k e 
+r     * 
+a     * 
 t i k * 
 
 */
