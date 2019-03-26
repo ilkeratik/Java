@@ -1,7 +1,3 @@
-package ilk;
-
-
-
 import java.util.Scanner;
 
 public class sekilliisimyazma {
@@ -13,7 +9,6 @@ public class sekilliisimyazma {
 		String al=scn.nextLine();
 		int i,j,uzun=0,puan=0;
 		uzun=al.length();
-		
 		while(uzun%12!=0) {
 			al=al+"*";
 			uzun=al.length();
@@ -34,16 +29,14 @@ public class sekilliisimyazma {
 					}
 					else {
 						System.out.print(reis[uzun+1-i]+" ");
-					}
-					
-					
+					}	
 				}
 				else {
 					System.out.print("  "); 
 				}
-		
 			}
 			System.out.println();
 		}
-		}
+	
+	}
 }
