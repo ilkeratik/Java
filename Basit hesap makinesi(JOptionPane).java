@@ -6,7 +6,7 @@ public class dialog {
 		String[] secenek= {" (/) "," (*) ","(+) "," (-) "};
 		String s1=JOptionPane.showInputDialog(null,"1. sayiyi girin");
 		
-		int secim=JOptionPane.showOptionDialog(null,"Ýþlemi seç","Java",JOptionPane.YES_NO_CANCEL_OPTION,0,null,secenek,null);
+		int secim=JOptionPane.showOptionDialog(null,"islemi seÃ§","Java",JOptionPane.YES_NO_CANCEL_OPTION,0,null,secenek,null);
 		
 		String s2=JOptionPane.showInputDialog(null,"2. sayiyi girin");
 		
