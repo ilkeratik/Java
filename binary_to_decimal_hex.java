@@ -7,7 +7,7 @@ public class binarytodecimaloctal{
         int sum = 0;
         int len =  s.length();
         for(int i = 0; i < len ; i++){
-            //if char-number at the current index is 0 then we add 2^i to sum
+            //if the char-number at the current index is equal to 1, we add 2^i to sum
             if( s.charAt(i) == '1') {
                 sum += Math.pow(2, len - i -1) ;
             }
@@ -26,19 +26,19 @@ public class binarytodecimaloctal{
         int len = s.length(), part, sum = 0;
         //initialized null string
         String hex = "";
-        //checking the size of string if the size is multiple of 4, part number would be exactly the division
+        //checking the size of string if the size is multiple of 4, number of parts will be equal to the division
         if ( len % 4 == 0){
             part = len / 4;
         }
-       //if its not a multiple of 4 then we have to divide string part+1 because the last one can be less than size 4, we will fill rest with 0 logically
+       //if it's not a multiple of 4 then we have to divide string to (part+1) because the last one can be less than size 4, we will fill the rest with 0 logically
         else{
             part = (len / 4) + 1;
         }
-        //each 4 character size group will represent a character from hexadecimal display
+        //each 4 digit sized group will represent a character from hexadecimal display
         for( int i = 0; i < part ; i++){
             for ( int j = 0; j < 4; j++){
-                //if the index is bigger than bounds we will consider its value as 0, this will happen when the last part has less than 4 elements
-                //next conduct will check wheter the value at current index is 1 or 0, if it is 1 will add 2^j to sum of particular group
+                //if the index is bigger than bounds we will consider its value as 0, that happens when the last part has less than 4 digits
+                //next condition will check whether the value at current index is 1 or 0, if it is 1, 2^j will be added to the sum of particular group
                 if((len - 1 - (i * 4 + j)) >= 0 && s.charAt(len - 1 - (i * 4 + j)) == '1'){
                         sum += Math.pow(2 , j);
                 }
